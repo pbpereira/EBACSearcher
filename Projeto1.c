@@ -193,7 +193,8 @@ int main ()
 		printf("Encontre a opção desejada no menu:\n\n");
 		printf("\t1 Registrar alunos\n");
 		printf("\t2 Pesquisar alunos\n");
-		printf("\t3 Excluir alunos\n\n");
+		printf("\t3 Excluir alunos\n");
+		printf("\t4 Sair do sistema\n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf ("%d", &opcao); // armazenando a escolha do usuario
@@ -212,6 +213,11 @@ int main ()
     		
     		case 3:
 			excluir(); //chamada de funções
+	    	break;
+	    	
+	    	case 4:
+	    	printf("Obrigado por utilizar o sistema!\n");
+	    	return 0;
 	    	break;
 	    	
 	    	default:
